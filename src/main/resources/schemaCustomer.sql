@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS Customers;
+CREATE TABLE Customers(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  last_name VARCHAR(500) NOT NULL,
+  email VARCHAR(500) NOT NULL,
+  dni VARCHAR(8) NOT NULL,
+  creation_date TIMESTAMP NOT NULL,
+  date_birth DATE NOT NULL
+)
