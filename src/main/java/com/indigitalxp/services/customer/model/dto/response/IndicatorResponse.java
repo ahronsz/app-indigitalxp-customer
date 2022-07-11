@@ -9,7 +9,6 @@ import lombok.Setter;
 @Setter
 public class IndicatorResponse {
   private String description;
-  @JsonIgnore
   private String quantity;
   private MonthsOfYearResponse monthsOfYearResponse;
 }
