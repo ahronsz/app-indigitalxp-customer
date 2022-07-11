@@ -1,4 +1,4 @@
-package com.indigitalxp.services.customer.model.dto;
+package com.indigitalxp.services.customer.model.dto.request;
 
 import java.time.LocalDate;
 import javax.validation.constraints.Email;
