@@ -3,6 +3,7 @@ package com.indigitalxp.services.customer.model.dto.request;
 import java.time.LocalDate;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,6 +19,7 @@ public class CustomerRequest {
   @Email
   private String email;
   @NotNull
+  @Pattern(regexp = "[0-9]{8}", message = "Ingrese un formato correcto de DNI")
   private String dni;
   @NotNull
   private LocalDate dateBirth;
