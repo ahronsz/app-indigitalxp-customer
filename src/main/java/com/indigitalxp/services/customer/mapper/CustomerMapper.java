@@ -13,7 +13,6 @@ public interface CustomerMapper {
   @Mapping(target = "creationDate", expression = "java(LocalDateTime.now())")
   Customer toEntity(CustomerRequest request);
 
-  @Mapping(target = "creationDate", expression = "java(LocalDateTime.now())")
   CustomerResponse toResponse(Customer customer);
 
 }
